@@ -16,6 +16,6 @@ const URL=process.env.MONGOURL;
 mongoose.connect(URL).then(()=>{
     console.log("db connected successfully");
     app.listen(PORT,()=>{
-        console.log('Server is running on ${PORT}')
+        console.log(`Server is running on ${PORT}`)
     })
 }).catch(error=>console.log(error));
